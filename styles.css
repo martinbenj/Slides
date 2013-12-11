@@ -1,0 +1,39 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body {
+	background-color:#ddd;
+	font-family:"Helvetica Neue";
+	font-weight: 100;
+	overflow:scroll;
+	color: #333;
+}
+
+.slide {
+	background-color:#fff;
+	width:600px;
+	height:600px;
+	padding:20px;
+	margin:83px auto;
+}
+
+.title {
+	font-size:2em;
+	font-weight:bold;
+}
+
+.subtitle {
+	font-size:1.5em;
+	font-weight:normal;
+}
+
+.bullet {
+	font-size:1em;
+}
+
+.hidden {
+	display:none;
+}
