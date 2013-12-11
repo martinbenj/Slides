@@ -12,7 +12,15 @@ body {
 	color: #333;
 }
 
-.slide, .page-number {
+.center {
+	text-align:center;
+}
+
+.solo {
+	line-height:520px;
+}
+
+.slide, .page-number, iframe {
 	border:1px solid #bbb;
 	box-shadow: 0px 0px 5px #333;
 	border-radius:5px;
@@ -59,4 +67,9 @@ body {
 	font-size:3em;
 	text-align: center;
 	line-height:100px;
+}
+
+iframe {
+	display:block;
+	margin:0 auto;
 }

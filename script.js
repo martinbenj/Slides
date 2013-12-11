@@ -37,6 +37,8 @@ window.onload = function(){
 	}
 }
 
+var play = false;
+
 window.onscroll = function(){
 
 	var pageNumber = document.getElementsByClassName('page-number')[0];
@@ -46,7 +48,8 @@ window.onscroll = function(){
 	pageNumber.innerHTML = page + '/5';
 
 
-	if (+pageNumber.innerHTML[0] === 5){
+
+	if (+pageNumber.innerHTML[0] === 5 && !play){
 		console.log();
 		document.getElementsByTagName('audio')[0].currentTime = 62;
 		document.getElementsByTagName('audio')[0].volume = 0;
@@ -58,6 +61,9 @@ window.onscroll = function(){
 		setTimeout(function(){clearInterval(interval)}, 1000);
 
 		document.getElementsByTagName('audio')[0].play();
+
+		play = true;
+
 	}
 
 };
