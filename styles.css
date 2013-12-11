@@ -18,15 +18,18 @@ body {
 	height:600px;
 	padding:20px;
 	margin:83px auto;
+	border-radius:5px;
+	border:1px solid #bbb;
+	box-shadow: 1px 0px 3px #333;
 }
 
 .title {
-	font-size:2em;
+	font-size:3em;
 	font-weight:bold;
 }
 
 .subtitle {
-	font-size:1.5em;
+	font-size:2em;
 	font-weight:normal;
 }
 
@@ -35,5 +38,10 @@ body {
 }
 
 .hidden {
-	display:none;
+	opacity: 0;
+}
+
+.visible {
+	transition: 0.7s;
+	opacity: 1;
 }
