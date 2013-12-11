@@ -26,7 +26,7 @@ window.onload = function(){
 			debugger;
 			var page = document.getElementsByClassName('page-number')[0].innerHTML;
 			var pageNumber = +page[0];
-			document.getElementsByClassName('page-number')[0].innerHTML = pageNumber + 1 + '/5';
+			document.getElementsByClassName('page-number')[0].innerHTML = Math.min(pageNumber + 1, 5) + '/5';
 
 			e.preventDefault();
 			e.stopPropagation();
@@ -40,7 +40,7 @@ window.onscroll = function(){
 	var pageNumber = document.getElementsByClassName('page-number')[0];
 	var scrollPos = document.body.scrollTop;
 
-	var page = Math.max(Math.ceil(document.body.scrollTop / 723), 1);
+	var page = Math.max(Math.ceil(document.body.scrollTop / 720), 1);
 	pageNumber.innerHTML = page + '/5';
 
 	// switch (true) {
