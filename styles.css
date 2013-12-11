@@ -12,15 +12,18 @@ body {
 	color: #333;
 }
 
+.slide, .page-number {
+	border:1px solid #bbb;
+	box-shadow: 0px 0px 5px #333;
+	border-radius:5px;
+}
+
 .slide {
 	background-color:#fff;
-	width:600px;
-	height:600px;
-	padding:20px;
-	margin:83px auto;
-	border-radius:5px;
-	border:1px solid #bbb;
-	box-shadow: 1px 0px 3px #333;
+	width:560px;
+	height:560px;
+	padding:40px;
+	margin:80px auto;
 }
 
 .title {
@@ -44,4 +47,16 @@ body {
 .visible {
 	transition: 0.7s;
 	opacity: 1;
+}
+
+.page-number {
+	width:100px;
+	height:100px;
+	background-color:#fff;
+	position:fixed;
+	left:30px;
+	top:30px;
+	font-size:3em;
+	text-align: center;
+	line-height:100px;
 }
