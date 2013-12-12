@@ -17,7 +17,7 @@ body {
 }
 
 .solo {
-	line-height:520px;
+	line-height:500px;
 }
 
 .slide, .page-number, iframe, img {
@@ -28,15 +28,14 @@ body {
 
 .slide {
 	background-color:#fff;
-	width:560px;
-	height:560px;
-	padding:40px;
+	width:580px;
+	height:580px;
+	padding:30px;
 	margin:80px auto;
 }
 
 .title, .subtitle {
-	line-height:1em;
-	margin-top:30px;
+	margin-top:20px;
 }
 
 .title {

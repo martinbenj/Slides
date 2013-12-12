@@ -6,12 +6,20 @@ function onPlayerReady(event) {
   event.target.playVideo();
 }
 
+var play = false;
+
 window.onload = function(){
 
 	// document.getElementsByTagName('iframe')[0].play();
 
 	// Prevent keydown of spacebar scrolling the page
 	document.body.onkeydown = function(e) { 
+
+		if (play === true) {
+			document.getElementsByTagName('audio')[0].pause();
+			play = false;
+		}
+
     return !(e.keyCode === 32);
 	};
 
@@ -36,8 +44,6 @@ window.onload = function(){
 		}
 	}
 }
-
-var play = false;
 
 window.onscroll = function(){
 
