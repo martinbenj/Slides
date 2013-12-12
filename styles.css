@@ -20,7 +20,7 @@ body {
 	line-height:520px;
 }
 
-.slide, .page-number, iframe {
+.slide, .page-number, iframe, img {
 	border:1px solid #bbb;
 	box-shadow: 0px 0px 5px #333;
 	border-radius:5px;
@@ -32,6 +32,11 @@ body {
 	height:560px;
 	padding:40px;
 	margin:80px auto;
+}
+
+.title, .subtitle {
+	line-height:1em;
+	margin-top:30px;
 }
 
 .title {
@@ -62,14 +67,14 @@ body {
 	height:100px;
 	background-color:#fff;
 	position:fixed;
-	left:40px;
+	left:80px;
 	top:40px;
 	font-size:3em;
 	text-align: center;
 	line-height:100px;
 }
 
-iframe {
+iframe, img {
 	display:block;
-	margin:0 auto;
+	margin:30px auto;
 }
